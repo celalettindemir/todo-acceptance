@@ -1,0 +1,26 @@
+{
+  "name": "acceptance",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "/features"
+  ],
+  "scripts": {
+    "start": "npx cucumber-js --format progress",
+    "work": "npx cucumber-js --format progress --tags @work",
+    "generate-report": "yarn start && node reporter.js"
+  },
+  "dependencies": {
+    "axe-puppeteer": "^1.1.1",
+    "axe-reports": "^1.1.11",
+    "cucumber": "^6.0.5",
+    "dotenv": "^8.6.0",
+    "pixelmatch": "^5.2.1",
+    "puppeteer": "^13.1.2"
+  },
+  "puppeteerOptions": {
+    "headless": true,
+    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
+    "PUPPETEER_EXECUTABLE_PATH": "which chromium"
+  }
+}
