@@ -1,4 +1,4 @@
 # Acceptance
 
-set VUE_APP_TEST_API_URL=localhost
-npm start
+- set VUE_APP_TEST_API_URL=localhost
+- npm start
